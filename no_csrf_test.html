@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>No CSRF Test Form</title>
+</head>
+<body>
+    <h1>No CSRF Test Form</h1>
+    <p>This form will post to a route that explicitly disables CSRF verification.</p>
+    
+    <form action="http://localhost/tow-three-ld/index.php/test-no-csrf" method="post">
+        <!-- No CSRF token needed -->
+        <input type="text" name="test_field" value="test value">
+        <button type="submit">Submit No CSRF Test</button>
+    </form>
+    
+    <hr>
+    
+    <p>If the above form works, the issue is definitely with CSRF verification.</p>
+</body>
+</html> 

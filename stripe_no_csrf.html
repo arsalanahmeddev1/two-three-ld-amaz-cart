@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stripe No CSRF Test</title>
+</head>
+<body>
+    <h1>Stripe No CSRF Test</h1>
+    <p>This form will post to a route that explicitly disables CSRF verification.</p>
+    
+    <form action="http://localhost/tow-three-ld/index.php/test-no-csrf" method="post">
+        <!-- No CSRF token needed -->
+        
+        <!-- Required fields -->
+        <input type="hidden" name="method" value="Stripe">
+        <input type="hidden" name="stripeToken" value="tok_visa">
+        <input type="hidden" name="amount" value="100">
+        <input type="hidden" name="debug_field" value="debug_value">
+        
+        <!-- Customer info -->
+        <input type="hidden" name="customer_name" value="Test Customer">
+        <input type="hidden" name="customer_email" value="test@example.com">
+        <input type="hidden" name="customer_phone" value="1234567890">
+        
+        <button type="submit" style="padding: 10px; background: blue; color: white;">
+            Submit Stripe No CSRF Test
+        </button>
+    </form>
+    
+    <hr>
+    
+    <p>If this form works but the original doesn't, the issue is definitely with CSRF verification.</p>
+</body>
+</html> 

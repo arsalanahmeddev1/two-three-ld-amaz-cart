@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Form</title>
+</head>
+<body>
+    <h1>Test Form</h1>
+    <p>This form will post directly to the seller.subscription_payment route.</p>
+    
+    <form action="http://localhost/tow-three-ld/index.php/seller/seller-subscription-payment" method="post">
+        <!-- Copy the CSRF token from your Laravel page and paste it here -->
+        <input type="hidden" name="_token" value="46GDWUzuM2l8ld3Zz8MCgN8VVEXIYS3Nse7TCgQc">
+        
+        <!-- Required fields -->
+        <input type="hidden" name="method" value="Stripe">
+        <input type="hidden" name="stripeToken" value="tok_visa">
+        <input type="hidden" name="amount" value="100">
+        <input type="hidden" name="debug_field" value="debug_value">
+        
+        <button type="submit" style="padding: 10px; background: blue; color: white;">
+            Submit Test Form
+        </button>
+    </form>
+    
+    <p>Instructions:</p>
+    <ol>
+        <li>Copy the CSRF token from your Laravel page (use the "Copy CSRF Token" button)</li>
+        <li>Replace "PASTE_CSRF_TOKEN_HERE" in this HTML with the copied token</li>
+        <li>Open this HTML file in your browser</li>
+        <li>Click the Submit Test Form button</li>
+    </ol>
+</body>
+</html> 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Very Simple Test Form</title>
+</head>
+<body>
+    <h1>Very Simple Test Form</h1>
+    <p>This form will post to a simple test controller.</p>
+    
+    <form action="http://localhost/tow-three-ld/index.php/test-post" method="post">
+        <!-- CSRF token - copy from your Laravel page -->
+        <input type="hidden" name="_token" value="46GDWUzuM2l8ld3Zz8MCgN8VVEXIYS3Nse7TCgQc">
+        
+        <input type="text" name="test_field" value="test value">
+        <button type="submit">Submit Simple Test</button>
+    </form>
+    
+    <hr>
+    
+    <p>Or try a direct GET request:</p>
+    <a href="http://localhost/tow-three-ld/index.php/test" target="_blank">Test GET Request</a>
+</body>
+</html> 

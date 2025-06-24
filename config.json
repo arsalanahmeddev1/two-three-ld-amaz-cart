@@ -1,0 +1,15 @@
+{
+  "version": "4.0",
+  "release_date": "28/10/2023",
+  "min": "3.9.1",
+  "migrations": [
+    "Modules/GeneralSetting/Database/Migrations/2023_09_04_193747_add_user_registration_email_template_manual_activation.php",
+	  "Modules/GeneralSetting/Database/Migrations/2023_08_25_103732_add_registration_success_url_column_on_general_settings_table.php",
+	  "Modules/GeneralSetting/Database/Migrations/2021_05_17_125912_create_email_template_types_table.php",
+	  "database/migrations/2023_08_06_120129_add_users_login_checkout_column_on_general_settings_table.php",
+      "database/migrations/2023_10_28_153259_create_slug_column_on_payment_methods_table.php"
+
+   ],
+  "url": "https://spondonit.com/contact",
+  "notes": "This is a bug fixing, design improve, new feature added. Minimum amazcart version required 3.9.1"
+}

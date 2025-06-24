@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stripe Test Form</title>
+</head>
+<body>
+    <h1>Stripe Test Form</h1>
+    <form action="http://localhost/tow-three-ld/seller/seller-subscription-payment" method="post">
+        <!-- CSRF Token - Copy this from your actual form -->
+        <input type="hidden" name="_token" value="REPLACE_WITH_ACTUAL_CSRF_TOKEN">
+        
+        <!-- Required fields -->
+        <input type="hidden" name="method" value="Stripe">
+        <input type="hidden" name="stripeToken" value="tok_visa"> <!-- Test token -->
+        <input type="hidden" name="amount" value="100">
+        <input type="hidden" name="debug_field" value="debug_value">
+        
+        <!-- Customer info -->
+        <input type="hidden" name="customer_name" value="Test Customer">
+        <input type="hidden" name="customer_email" value="test@example.com">
+        <input type="hidden" name="customer_phone" value="1234567890">
+        
+        <button type="submit">Submit Test Form</button>
+    </form>
+</body>
+</html> 
