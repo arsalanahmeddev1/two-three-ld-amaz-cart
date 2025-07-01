@@ -22,11 +22,13 @@ if($total_number_of_items > 0){
 }
 @endphp
 <style>
+    
      @media (max-width: 375px)
         {
             .shorting_box:nth-child(2){
                 display: none;
             }
+            
 
         }
 </style>
@@ -35,7 +37,7 @@ if($total_number_of_items > 0){
   <div class="col-12">
       <div class="box_header d-flex flex-wrap align-items-center justify-content-between">
           <h5 class="font_16 f_w_500 mr_10 mb-0">{{__('defaultTheme.showing')}} @if($show_start == $show_end) {{getNumberTranslate($show_end)}} @else {{getNumberTranslate($show_start)}} - {{getNumberTranslate($show_end)}} @endif {{__('defaultTheme.out_of_total')}} {{getNumberTranslate($total_number_of_items)}} {{__('common.products')}}</h5>
-          <div class="box_header_right ">
+          <div class="box_header_right">
               <div class="short_select d-flex align-items-center gap_10 flex-wrap">
                 <div class="prduct_showing_style">
                   <ul class="nav align-items-center" id="myTab" role="tablist">

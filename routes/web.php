@@ -310,6 +310,10 @@ Route::get('/shop/filter-paginate', [App\Http\Controllers\Frontend\ShopControlle
 Route::get('/product/{slug}', [App\Http\Controllers\Frontend\ProductController::class, 'show'])->name('frontend.product.details');
 
 
+// new custom routes
+Route::get('/new-shop', [ProductController::class, 'newShopPage'])->name('frontend.new-shop');
+
+
 
 
 

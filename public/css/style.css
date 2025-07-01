@@ -533,6 +533,7 @@ input {
 .marketplace-slider.owl-carousel .owl-nav .owl-next::before {
   content: '\f054'; /* Font Awesome icon for right arrow */
 }
+
 /* responsive */
 @media (min-width: 1550px) {
  .container {
